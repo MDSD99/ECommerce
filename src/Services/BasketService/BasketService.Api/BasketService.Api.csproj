@@ -1,0 +1,61 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>1a88bf84-4c18-4f4d-8875-1b0333cc430b</UserSecretsId>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.12" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.12" />
+    <PackageReference Include="Consul" Version="1.6.10.9" />
+    <PackageReference Include="StackExchange.Redis" Version="2.6.122" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Controllers\" />
+    <None Remove="Extensions\" />
+    <None Remove="Core\" />
+    <None Remove="Core\Application\" />
+    <None Remove="Core\Domain\" />
+    <None Remove="Core\Domain\Models\" />
+    <None Remove="Core\Application\Repository\" />
+    <None Remove="Core\Application\Services\" />
+    <None Remove="Infrastructure\" />
+    <None Remove="Infrastructure\Repository\" />
+    <None Remove="Infrastructure\Services\" />
+    <None Remove="IntegrationEvents\" />
+    <None Remove="IntegrationEvents\Events\" />
+    <None Remove="IntegrationEvents\EventHandlers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Core\" />
+    <Folder Include="Core\Application\" />
+    <Folder Include="Core\Domain\" />
+    <Folder Include="Core\Domain\Models\" />
+    <Folder Include="Core\Application\Repository\" />
+    <Folder Include="Core\Application\Services\" />
+    <Folder Include="Infrastructure\" />
+    <Folder Include="Infrastructure\Repository\" />
+    <Folder Include="Infrastructure\Services\" />
+    <Folder Include="IntegrationEvents\" />
+    <Folder Include="IntegrationEvents\Events\" />
+    <Folder Include="IntegrationEvents\EventHandlers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\BuildingBlocks\EventBus\EventBus.Base\EventBus.Base.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\BuildingBlocks\EventBus\EventBus.Factory\EventBus.Factory.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

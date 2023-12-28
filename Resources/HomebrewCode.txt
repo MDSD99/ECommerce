@@ -1,0 +1,16 @@
+﻿Home Brew:
+Cd	/opt/homebrew 
+
+Mango Db:
+brew services start mongodb-community@7.0 servis olarak çalıştırır.
+brew services stop mongodb-community@7.0
+
+brew services list
+
+mongod --config /opt/homebrew/etc/mongod.conf --fork
+ps aux | grep -v grep | grep mongod
+
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+export PATH=/opt/homebrew/bin:$PATH
+brew install mongosh

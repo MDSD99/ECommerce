@@ -1,0 +1,505 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/mehmetdogan/Example/ECommerce/src/Services/OrderService/OrderService.Infrastructure/OrderService.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "/Users/mehmetdogan/Example/ECommerce/src/BuildingBlocks/EventBus/EventBus.AzureServiceBus/EventBus.AzureServiceBus.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mehmetdogan/Example/ECommerce/src/BuildingBlocks/EventBus/EventBus.AzureServiceBus/EventBus.AzureServiceBus.csproj",
+        "projectName": "EventBus.AzureServiceBus",
+        "projectPath": "/Users/mehmetdogan/Example/ECommerce/src/BuildingBlocks/EventBus/EventBus.AzureServiceBus/EventBus.AzureServiceBus.csproj",
+        "packagesPath": "/Users/mehmetdogan/.nuget/packages/",
+        "outputPath": "/Users/mehmetdogan/Example/ECommerce/src/BuildingBlocks/EventBus/EventBus.AzureServiceBus/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mehmetdogan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/mehmetdogan/Example/ECommerce/src/BuildingBlocks/EventBus/EventBus.Base/EventBus.Base.csproj": {
+                "projectPath": "/Users/mehmetdogan/Example/ECommerce/src/BuildingBlocks/EventBus/EventBus.Base/EventBus.Base.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.Azure.ServiceBus": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.311/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/mehmetdogan/Example/ECommerce/src/BuildingBlocks/EventBus/EventBus.Base/EventBus.Base.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mehmetdogan/Example/ECommerce/src/BuildingBlocks/EventBus/EventBus.Base/EventBus.Base.csproj",
+        "projectName": "EventBus.Base",
+        "projectPath": "/Users/mehmetdogan/Example/ECommerce/src/BuildingBlocks/EventBus/EventBus.Base/EventBus.Base.csproj",
+        "packagesPath": "/Users/mehmetdogan/.nuget/packages/",
+        "outputPath": "/Users/mehmetdogan/Example/ECommerce/src/BuildingBlocks/EventBus/EventBus.Base/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mehmetdogan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.311/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/mehmetdogan/Example/ECommerce/src/BuildingBlocks/EventBus/EventBus.Factory/EventBus.Factory.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mehmetdogan/Example/ECommerce/src/BuildingBlocks/EventBus/EventBus.Factory/EventBus.Factory.csproj",
+        "projectName": "EventBus.Factory",
+        "projectPath": "/Users/mehmetdogan/Example/ECommerce/src/BuildingBlocks/EventBus/EventBus.Factory/EventBus.Factory.csproj",
+        "packagesPath": "/Users/mehmetdogan/.nuget/packages/",
+        "outputPath": "/Users/mehmetdogan/Example/ECommerce/src/BuildingBlocks/EventBus/EventBus.Factory/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mehmetdogan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/mehmetdogan/Example/ECommerce/src/BuildingBlocks/EventBus/EventBus.AzureServiceBus/EventBus.AzureServiceBus.csproj": {
+                "projectPath": "/Users/mehmetdogan/Example/ECommerce/src/BuildingBlocks/EventBus/EventBus.AzureServiceBus/EventBus.AzureServiceBus.csproj"
+              },
+              "/Users/mehmetdogan/Example/ECommerce/src/BuildingBlocks/EventBus/EventBus.Base/EventBus.Base.csproj": {
+                "projectPath": "/Users/mehmetdogan/Example/ECommerce/src/BuildingBlocks/EventBus/EventBus.Base/EventBus.Base.csproj"
+              },
+              "/Users/mehmetdogan/Example/ECommerce/src/BuildingBlocks/EventBus/EventBus.RabbitMQ/EventBus.RabbitMQ.csproj": {
+                "projectPath": "/Users/mehmetdogan/Example/ECommerce/src/BuildingBlocks/EventBus/EventBus.RabbitMQ/EventBus.RabbitMQ.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.311/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/mehmetdogan/Example/ECommerce/src/BuildingBlocks/EventBus/EventBus.RabbitMQ/EventBus.RabbitMQ.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mehmetdogan/Example/ECommerce/src/BuildingBlocks/EventBus/EventBus.RabbitMQ/EventBus.RabbitMQ.csproj",
+        "projectName": "EventBus.RabbitMQ",
+        "projectPath": "/Users/mehmetdogan/Example/ECommerce/src/BuildingBlocks/EventBus/EventBus.RabbitMQ/EventBus.RabbitMQ.csproj",
+        "packagesPath": "/Users/mehmetdogan/.nuget/packages/",
+        "outputPath": "/Users/mehmetdogan/Example/ECommerce/src/BuildingBlocks/EventBus/EventBus.RabbitMQ/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mehmetdogan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/mehmetdogan/Example/ECommerce/src/BuildingBlocks/EventBus/EventBus.Base/EventBus.Base.csproj": {
+                "projectPath": "/Users/mehmetdogan/Example/ECommerce/src/BuildingBlocks/EventBus/EventBus.Base/EventBus.Base.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Polly": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.311/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/mehmetdogan/Example/ECommerce/src/Services/OrderService/OrderService.Application/OrderService.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mehmetdogan/Example/ECommerce/src/Services/OrderService/OrderService.Application/OrderService.Application.csproj",
+        "projectName": "OrderService.Application",
+        "projectPath": "/Users/mehmetdogan/Example/ECommerce/src/Services/OrderService/OrderService.Application/OrderService.Application.csproj",
+        "packagesPath": "/Users/mehmetdogan/.nuget/packages/",
+        "outputPath": "/Users/mehmetdogan/Example/ECommerce/src/Services/OrderService/OrderService.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mehmetdogan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/mehmetdogan/Example/ECommerce/src/BuildingBlocks/EventBus/EventBus.Base/EventBus.Base.csproj": {
+                "projectPath": "/Users/mehmetdogan/Example/ECommerce/src/BuildingBlocks/EventBus/EventBus.Base/EventBus.Base.csproj"
+              },
+              "/Users/mehmetdogan/Example/ECommerce/src/BuildingBlocks/EventBus/EventBus.Factory/EventBus.Factory.csproj": {
+                "projectPath": "/Users/mehmetdogan/Example/ECommerce/src/BuildingBlocks/EventBus/EventBus.Factory/EventBus.Factory.csproj"
+              },
+              "/Users/mehmetdogan/Example/ECommerce/src/Services/OrderService/OrderService.Domain/OrderService.Domain.csproj": {
+                "projectPath": "/Users/mehmetdogan/Example/ECommerce/src/Services/OrderService/OrderService.Domain/OrderService.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.311/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/mehmetdogan/Example/ECommerce/src/Services/OrderService/OrderService.Domain/OrderService.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mehmetdogan/Example/ECommerce/src/Services/OrderService/OrderService.Domain/OrderService.Domain.csproj",
+        "projectName": "OrderService.Domain",
+        "projectPath": "/Users/mehmetdogan/Example/ECommerce/src/Services/OrderService/OrderService.Domain/OrderService.Domain.csproj",
+        "packagesPath": "/Users/mehmetdogan/.nuget/packages/",
+        "outputPath": "/Users/mehmetdogan/Example/ECommerce/src/Services/OrderService/OrderService.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mehmetdogan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.311/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/mehmetdogan/Example/ECommerce/src/Services/OrderService/OrderService.Infrastructure/OrderService.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mehmetdogan/Example/ECommerce/src/Services/OrderService/OrderService.Infrastructure/OrderService.Infrastructure.csproj",
+        "projectName": "OrderService.Infrastructure",
+        "projectPath": "/Users/mehmetdogan/Example/ECommerce/src/Services/OrderService/OrderService.Infrastructure/OrderService.Infrastructure.csproj",
+        "packagesPath": "/Users/mehmetdogan/.nuget/packages/",
+        "outputPath": "/Users/mehmetdogan/Example/ECommerce/src/Services/OrderService/OrderService.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mehmetdogan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/mehmetdogan/Example/ECommerce/src/Services/OrderService/OrderService.Application/OrderService.Application.csproj": {
+                "projectPath": "/Users/mehmetdogan/Example/ECommerce/src/Services/OrderService/OrderService.Application/OrderService.Application.csproj"
+              },
+              "/Users/mehmetdogan/Example/ECommerce/src/Services/OrderService/OrderService.Domain/OrderService.Domain.csproj": {
+                "projectPath": "/Users/mehmetdogan/Example/ECommerce/src/Services/OrderService/OrderService.Domain/OrderService.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.12, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.311/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

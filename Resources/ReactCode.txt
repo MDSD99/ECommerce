@@ -1,0 +1,10 @@
+﻿npm install -g create-react-app
+npx create-react-app webapp
+npm install json-server
+json-server --watch db.json --port 3004
+npm install reactstrap
+npm install bootstrap
+npm run start
+
+npm install alertifyjs
+npm install react-router-dom

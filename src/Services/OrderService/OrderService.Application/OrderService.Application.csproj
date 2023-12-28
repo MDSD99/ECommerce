@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="MediatR" Version="12.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="DomainEventHandlers\" />
+    <None Remove="Dtos\" />
+    <None Remove="Features\" />
+    <None Remove="IntegrationEvents\" />
+    <None Remove="Interfaces\" />
+    <None Remove="Mapping\" />
+    <None Remove="Interfaces\Repositories\" />
+    <None Remove="Features\Commands\" />
+    <None Remove="Features\Queries\" />
+    <None Remove="Features\Queries\ViewModels\" />
+    <None Remove="Features\Queries\GetOrderDetailById\" />
+    <None Remove="Features\Commands\CreateOrder\" />
+    <None Remove="Mapping\OrderMapping\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DomainEventHandlers\" />
+    <Folder Include="Dtos\" />
+    <Folder Include="Features\" />
+    <Folder Include="IntegrationEvents\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Mapping\" />
+    <Folder Include="Interfaces\Repositories\" />
+    <Folder Include="Features\Commands\" />
+    <Folder Include="Features\Queries\" />
+    <Folder Include="Features\Queries\ViewModels\" />
+    <Folder Include="Features\Queries\GetOrderDetailById\" />
+    <Folder Include="Features\Commands\CreateOrder\" />
+    <Folder Include="Mapping\OrderMapping\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OrderService.Domain\OrderService.Domain.csproj" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\EventBus\EventBus.Base\EventBus.Base.csproj" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\EventBus\EventBus.Factory\EventBus.Factory.csproj" />
+  </ItemGroup>
+</Project>

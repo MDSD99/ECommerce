@@ -1,0 +1,5 @@
+﻿Domain Dravin Design,Onion Architecture,CQRS, MediatR,
+Logging-Serilog
+Oselot
+EventBus => RabbitMQ,AzureServiceBus
+Docker Series

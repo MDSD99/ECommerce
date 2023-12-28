@@ -1,0 +1,9 @@
+﻿catalog-api:
+  environment:
+    - ASPNETCORE_ENVIRONMENT=Development
+    - ASPNETCORE_URLS=http://0.0.0.0:80
+    - ConnectionString=YOUR_VALUE
+    - ... Other Environment Variables
+  ports:
+    - "5101:80"   # Important: In a production environment you should remove the external port (5101) kept here for microservice debugging purposes.
+                  # The API Gateway redirects and access through the internal port (80).

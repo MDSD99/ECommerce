@@ -1,0 +1,45 @@
+﻿using EventBus.Base.Abstraction;
+using MediatR;
+using OrderService.Application.IntegrationEvents;
+using OrderService.Application.Interfaces.Repositories;
+using OrderService.Domain.AggregateModels.OrderAggregate;
+
+namespace OrderService.Application.Features.Commands.CreateOrder
+{
+	public class CreateOrderCommandHandler : IRequestHandler<CreateOrderCommand,bool>
+	{
+        private readonly IOrderRepository orderRepository;
+        private readonly IEventBus eventBus;
+
+        public CreateOrderCommandHandler(IOrderRepository orderRepository, IEventBus eventBus)
+        {
+            this.orderRepository = orderRepository;
+            this.eventBus = eventBus;
+        }
+
+        public async Task<bool> Handle(CreateOrderCommand request, CancellationToken cancellationToken)
+        {
+            var addr = new Address(request.Street, request.City, request.State, request.Country, request.Zipcode);
+
+            Order dbOrder = new(request.UserName,addr,request.CardTypeId,request.Cardnumber,request.CardSecurityNumber,request.CardHolderName,request.CardExpiration,null);
+
+            request.OrderItems.ToList().ForEach(i => dbOrder.AddOrderItem(i.ProductId, i.ProductName, i.UnitPrice, i.PictureUrl, i.Units));
+
+            foreach (var orderItem in request.OrderItems)
+            {
+                dbOrder.AddOrderItem(orderItem.ProductId, orderItem.ProductName, orderItem.UnitPrice, orderItem.PictureUrl, orderItem.Units);
+            }
+
+            await orderRepository.AddAsync(dbOrder);
+
+            await orderRepository.UnitOfWork.SaveEntitiesAsync(cancellationToken);
+
+            var orderStartedIntegrationEvent = new OrderStartedIntegrationEvent(request.UserName);
+
+            eventBus.Publish(orderStartedIntegrationEvent);
+
+            return true;
+        }
+    }
+}
+

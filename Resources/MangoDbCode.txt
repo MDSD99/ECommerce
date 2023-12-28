@@ -1,0 +1,64 @@
+﻿Mongo db code:
+mongosh -v 
+show dbs
+Db
+Use local
+Show collections
+db.createCollection("cours”);
+db.courses.drop();
+db.dropDatabase();
+db.Instructor.insertOne({
+...   "name": "Mustafa Murat Coşkun",
+...   "students": 10000,
+...   "rating": 4.5,
+...   "courses": ["Python", "Java", "JavaScript"],
+...   "status": "A"
+... });
+db.Instructor.find();
+db.Instructor.find().pretty();
+db.Instructor.insertMany([
+...   
+...   {
+...     "name": "Mert Toker",
+...     "students": 10.0,
+...     "rating": 4.5,
+...     "courses": ["Python", "Java", "C#"],
+...     "status": "A"
+...   },
+...   {
+...     "name": "Can Kemer",
+...     "students": 15.0,
+...     "rating": 4.2,
+...     "courses": ["Python", "Java", "JavaScript", "C++"],
+...     "status": "A"
+...   },
+...   {
+...     "name": "Turgay Altın",
+...     "students": 20.0,
+...     "rating": 4.6,
+...     "courses": ["Python", "JavaScript", "Kotlin"],
+...     "status": "B"
+...   }
+... ]);
+db.Instructor.find().pretty().count();
+db.Instructor.findOne();
+db.Instructor.find({},{name:1,rating:1}).pretty();
+db.Instructor.find({},{courses:0}).pretty();
+db.Instructor.find({status:"A"}).pretty();
+db.Instructor.find({courses:"Kotlin"}).pretty();
+db.Instructor.find({rating:4.6,courses:"Kotlin"}).pretty();
+db.Instructor.find({rating:{$gt:4.5}});
+db.Instructor.find({rating:{$gte:4.5}});
+db.Instructor.updateOne({name:"Mustafa Murat Çoşkun"},{$set :{rating:4.6}});
+db.Instructor.updateMany({},{$set:{students:10000 }});
+db.Instructor.updateMany({status:"A"},{$set:{students:10000 }});
+db.Instructor.deleteOne({name:'Mustafa Murat Coşkun'});
+db.Instructor.deleteMany({name:'Mustafa Murat Coşkun'});
+db.Instructor.find().skip(1).pretty();
+db.Instructor.find().limit(2).pretty();
+db.Instructor.find().skip(1).limit(2).pretty();
+db.Instructor.find({},{rating:1}).sort({rating:1});
+db.Instructor.find({},{rating:1}).sort({rating:-1});
+db.Products.aggregate([{$group : {_id:{‘$category’},num_products:{$sum:rating}}}]);
+db.sales.aggregate([{$group :{ _id : "$category”, totalSaleAmount: { $sum:{ $multiply[ ‘$rating’  ] } } }}}])
+db.Products.aggregate( [{$group: {_id: null,tot: { $count: {} }}}] )

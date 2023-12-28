@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "k0m1BZTZyX9jh9gZ788K0uTZfvdGNtNOGrmyKo1c/YpEVqzDd3noGhVlmbE3YfF7DBdX9vNBLI2y/ZC3UGK/fQ==",
+  "success": true,
+  "projectFilePath": "/Users/mehmetdogan/Example/ECommerce/src/BuildingBlocks/EventBus/EventBus.Base/EventBus.Base.csproj",
+  "expectedPackageFiles": [
+    "/Users/mehmetdogan/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "/Users/mehmetdogan/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

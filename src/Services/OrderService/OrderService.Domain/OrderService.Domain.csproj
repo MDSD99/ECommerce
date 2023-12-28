@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="AggregateModels\" />
+    <None Remove="Events\" />
+    <None Remove="Models\" />
+    <None Remove="SeedWork\" />
+    <None Remove="AggregateModels\OrderAggregate\" />
+    <None Remove="AggregateModels\BuyerAggregate\" />
+    <None Remove="Exceptions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AggregateModels\" />
+    <Folder Include="Events\" />
+    <Folder Include="Models\" />
+    <Folder Include="SeedWork\" />
+    <Folder Include="AggregateModels\OrderAggregate\" />
+    <Folder Include="AggregateModels\BuyerAggregate\" />
+    <Folder Include="Exceptions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.1.1" />
+  </ItemGroup>
+</Project>
